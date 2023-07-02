@@ -53,7 +53,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div className="banner-img min-h-[20rem] md:min-h-[50rem] lg:min-h-fit">
+        <div className="banner-img min-h-[30rem] md:min-h-[50rem] lg:min-h-fit">
           <div className="inset-2 absolute overflow-hidden rounded-lg">
             <img
               src="https://i.ibb.co/Sd6R6W7/Me.jpg"
