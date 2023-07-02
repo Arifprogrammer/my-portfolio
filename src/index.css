@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------------
+              Banner Section Start
+------------------------------------------------------------- */
+
+.banner-img {
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-img::before {
+  content: "";
+  background-image: conic-gradient(#66fcf1 20deg, transparent 120deg);
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+.i-title-item {
+  height: 50px;
+  font-weight: bold;
+  color: #a2bcd6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes move {
+  33% {
+    transform: translateY(-50px);
+  }
+  66% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
+}
+
+/* -------------------------------------------------------------
+              Banner Section End
+------------------------------------------------------------- */
