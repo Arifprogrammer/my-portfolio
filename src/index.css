@@ -79,7 +79,7 @@ html {
   transition: all 5s ease;
 }
 .project-img:hover {
-  transform: translateY(-50%);
+  object-position: bottom;
 }
 .projects {
   box-shadow: 16px 14px 20px #0000008c;

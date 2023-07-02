@@ -21,7 +21,11 @@ const Projects = () => {
             data-aos-duration="1200"
           >
             <div className="h-[26rem] overflow-hidden">
-              <img src={athlete} alt="" className="project-img w-full" />
+              <img
+                src={athlete}
+                alt=""
+                className="project-img h-full w-full object-cover object-top"
+              />
             </div>
             <div className="grow flex flex-wrap items-center gap-x-2 justify-around bg-black text-primary font-semibold">
               <a
