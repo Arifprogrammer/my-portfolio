@@ -8,6 +8,7 @@ import PdfFile from "../../../assets/Arif_React_Resume.pdf";
 import ToggleTheme from "../../../components/ToggleTheme";
 import MenuSwap from "../../../components/MenuSwap";
 import { useState } from "react";
+import logo from "../../../assets/logo-removebg.png";
 
 const Navbar = () => {
   const downloadPdf = () => {
@@ -21,6 +22,9 @@ const Navbar = () => {
 
   return (
     <>
+      <div className="w-20 h-20 lg:hidden mx-auto mt-2">
+        <img src={logo} alt="" className="w-full" />
+      </div>
       <div className="lg:hidden">
         <MenuSwap show={show} setShow={setShow} />
       </div>
@@ -29,6 +33,9 @@ const Navbar = () => {
           show ? "block" : "hidden lg:block"
         }`}
       >
+        <div className="w-32 h-32 hidden lg:block">
+          <img src={logo} alt="" className="w-full" />
+        </div>
         <Link to="/home" className="flex gap-x-4 items-center">
           <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
             <AiFillHome />

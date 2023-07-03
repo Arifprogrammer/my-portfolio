@@ -3,7 +3,7 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center my-16 lg:my-0"
+      className="min-h-screen flex items-center justify-center mt-8 mb-16 lg:my-0"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-y-8 lg:gap-y-0 lg:gap-x-8 px-4 lg:px-0">
         <div className="flex flex-col justify-center text-center lg:text-left lg:py-32">
