@@ -76,7 +76,11 @@ html {
               Projects Section Start
 ------------------------------------------------------------- */
 .project-img {
+  height: 100%;
+  width: 100%;
   transition: all 5s ease;
+  object-fit: cover;
+  object-position: top;
 }
 .project-img:hover {
   object-position: bottom;
