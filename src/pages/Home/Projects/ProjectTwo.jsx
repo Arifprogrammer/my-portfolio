@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
-import kiddu from "../../../assets/Kiddu.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
@@ -16,6 +15,8 @@ const ProjectTwo = () => {
               data-aos="zoom-in"
               data-aos-delay="150"
               data-aos-duration="3000"
+              data-aos-once="true"
+              to="/projects/2"
             >
               View Full Details <HiArrowNarrowRight className="text-2xl" />
             </Link>
@@ -26,9 +27,14 @@ const ProjectTwo = () => {
           data-aos="fade-left"
           data-aos-delay="100"
           data-aos-duration="1200"
+          data-aos-once="true"
         >
           <div className="h-[26rem] overflow-hidden">
-            <img src={kiddu} alt="" className="project-img" />
+            <img
+              src={"https://i.ibb.co/0Y3VgvK/kiddu-min.jpg"}
+              alt=""
+              className="project-img"
+            />
           </div>
           <div className="grow flex flex-wrap items-center gap-x-2 justify-around bg-black text-primary font-semibold">
             <a
@@ -80,6 +86,7 @@ const ProjectTwo = () => {
             data-aos="flip-left"
             data-aos-delay="50"
             data-aos-duration="1500"
+            data-aos-once="true"
           >
             <Fade delay={500} duration={2500}>
               <div className="h-[27.2rem] overflow-hidden">
@@ -111,6 +118,7 @@ const ProjectTwo = () => {
             data-aos="flip-right"
             data-aos-delay="100"
             data-aos-duration="2000"
+            data-aos-once="true"
           >
             <div className="h-[27.2rem] overflow-hidden">
               <Fade delay={1000} duration={2500}>

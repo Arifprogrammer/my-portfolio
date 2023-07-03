@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import recipe from "../../../assets/healthyRecipe.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
@@ -8,7 +7,7 @@ const ProjectThree = () => {
   const [details, setDetails] = useState(false);
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-y-0 lg:gap-x-4 relative mb-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-y-0 lg:gap-x-4 relative">
         {details && (
           <div className="absolute top-2/4 -right-44 hidden lg:block font-semibold">
             <Link
@@ -16,6 +15,8 @@ const ProjectThree = () => {
               data-aos="zoom-in"
               data-aos-delay="150"
               data-aos-duration="3000"
+              data-aos-once="true"
+              to="/projects/3"
             >
               View Full Details <HiArrowNarrowRight className="text-2xl" />
             </Link>
@@ -23,12 +24,17 @@ const ProjectThree = () => {
         )}
         <div
           className="border-2 border-primary rounded-lg h-[30rem] overflow-hidden flex flex-col projects"
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-delay="150"
           data-aos-duration="1200"
+          data-aos-once="true"
         >
           <div className="h-[26rem] overflow-hidden">
-            <img src={recipe} alt="" className="project-img" />
+            <img
+              src={"https://i.ibb.co/0GRBW9F/healthy-Recipe-min.jpg"}
+              alt=""
+              className="project-img"
+            />
           </div>
           <div className="grow flex flex-wrap items-center gap-x-2 justify-around bg-black text-primary font-semibold">
             <a
@@ -74,6 +80,7 @@ const ProjectThree = () => {
             data-aos="flip-left"
             data-aos-delay="50"
             data-aos-duration="1500"
+            data-aos-once="true"
           >
             <Fade delay={500} duration={2500}>
               <div className="h-[27.2rem] overflow-hidden">
@@ -105,6 +112,7 @@ const ProjectThree = () => {
             data-aos="flip-right"
             data-aos-delay="100"
             data-aos-duration="2000"
+            data-aos-once="true"
           >
             <div className="h-[27.2rem] overflow-hidden">
               <Fade delay={1000} duration={2500}>

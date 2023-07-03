@@ -5,7 +5,7 @@ export default {
     themes: [
       "light",
       "dark",
-      "pastel",
+      "coffee",
       {
         mytheme: {
           primary: "#66FCF1", //cyan light

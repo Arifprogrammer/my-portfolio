@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/MCFQGfs/athlete-X-min.jpg",
+    "name": "AthelteX.com (A Course Enrollment Platform)",
+    "about": "This project is designed to simplify the process of booking athlete classes for students during their summer vacations. It also allows instructors to effortlessly add and manage their classes. The system includes a secure payment integration, enabling students to conveniently pay for their chosen classes. Additionally, an admin panel is available for effective user and class management. Experience a streamlined platform that connects athletes with their desired classes.",
+    "credentials": [
+      "Admin: khalu@gmail.com | Seco&1",
+      "instructor: Instructor: john@example.com | Seco&1",
+      "student: Student: khali@gmail.com | Seco&1"
+    ],
+    "features": [
+      "✓ Student Dashboard: Students have access to a personalized dashboard where they can browse and book athlete classes for their summer vacations. They can also view their enrolled classes and payment history, providing a comprehensive overview of their athletic journey.",
+      "✓ Instructor Management: Instructors have dedicated tools to add and manage their classes. They can create detailed class listings, including class descriptions, schedules, and requirements. Additionally, instructors can view the status of their classes, such as approved, denied, or pending, allowing them to track their offerings effectively.",
+      "✓ Admin Control Panel: The admin role has access to a control panel that grants them complete control over user management and class organization. Admins can manage user roles, including assigning student and instructor privileges, and have the authority to approve or deny class requests.",
+      "✓ Secure Payment Integration: The project includes a secure payment system that enables students to conveniently pay for their chosen athlete classes. This feature ensures a seamless and hassle-free payment experience for students.",
+      "✓ Real-Time Seat Availability: When a student pays for a specific class, the available seats for that class are automatically reduced by one, ensuring accurate seat management.",
+      "✓ Real-Time Student Count: When a student pays for a specific class, the student count for the class increases by one, providing real-time updates on class enrollment. This feature helps both students and instructors make informed decisions about class availability."
+    ],
+    "live": "https://athletex-com.web.app",
+    "client": "https://github.com/Arifprogrammer/athelteX-client",
+    "server": "https://github.com/Arifprogrammer/athelteX-server"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/0Y3VgvK/kiddu-min.jpg",
+    "name": "Kiddu.com (A Toy Marketplace for Kids)",
+    "about": "The project's aim is to provide a platform where kids and parents alike can discover and explore a wide range of toys, creating a haven for play and imagination. We understand the importance of toys in a child's development, as they foster creativity, enhance cognitive skills, and encourage social interaction. The project's mission is to curate a diverse collection of toys from trusted brands, ensuring that every product meets high-quality standards for safety and durability. Whether it's educational toys that spark curiosity, interactive games that promote teamwork, or cuddly companions that offer comfort, our goal is to offer a comprehensive selection that caters to the unique interests and needs of children.",
+    "features": [
+      "✓ Used two user roles buyer and seller. Buyer and Seller are controlled with a private route.",
+      "✓ Seller can add their products, see all products, see their own products, update their products and delete their products. On the other hand buyers can just view toy details from anywhere.",
+      "✓ The website is responsive for mobile and larger devices like laptops and desktops."
+    ],
+    "live": "https://kiddu-com.web.app",
+    "client": "https://github.com/Arifprogrammer/kiddu.com-client",
+    "server": "https://github.com/Arifprogrammer/kiddu.com-server-public"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/0GRBW9F/healthy-Recipe-min.jpg",
+    "name": "Healthy Recipe.com (A Food Order Platform)",
+    "about": "This food recipe website is a platform where users can find and share their favorite recipes. It provides a wide range of recipes, from appetizers to desserts, and everything in between. The website is user-friendly and easy to navigate, with a clean and modern design. Each recipe includes a list of ingredients, step-by-step instructions, and photos to help users visualize the cooking process. In addition to browsing recipes, users can create their own profile and save their favorite recipes for easy access later on. Overall, this food recipe website provides a comprehensive platform for recipe sharing and discovery, catering to a wide range of tastes and dietary needs. It is a great resource for home cooks and food enthusiasts alike.",
+    "features": [
+      "✓ Successfully integrated Firebase authentication, enabling seamless login options for users via Google, GitHub, or Email/Password, with no sensitive data stored in the database.",
+      "✓ Implemented a robust private route system, granting access to authorized users while restricting access to the private route upon logout.",
+      "✓ Introduced user-friendly features, such as the ability to mark favorite recipes and conveniently print the blog page for enhanced user experience."
+    ],
+    "live": "https://healthy-recipe-a4d57.web.app",
+    "client": "https://github.com/Arifprogrammer/healthy-recipe.com",
+    "server": "https://github.com/Arifprogrammer/healthy-recipe.com-server"
+  }
+]

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import athlete from "../../../assets/athleteX.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
@@ -16,6 +15,8 @@ const ProjectOne = () => {
               data-aos="zoom-in"
               data-aos-delay="150"
               data-aos-duration="3000"
+              data-aos-once="true"
+              to="/projects/1"
             >
               View Full Details <HiArrowNarrowRight className="text-2xl" />
             </Link>
@@ -26,9 +27,14 @@ const ProjectOne = () => {
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="1200"
+          data-aos-once="true"
         >
           <div className="h-[26rem] overflow-hidden">
-            <img src={athlete} alt="" className="project-img" />
+            <img
+              src={"https://i.ibb.co/MCFQGfs/athlete-X-min.jpg"}
+              alt=""
+              className="project-img"
+            />
           </div>
           <div className="grow flex flex-wrap items-center gap-x-2 justify-around bg-black text-primary font-semibold">
             <a
@@ -74,6 +80,7 @@ const ProjectOne = () => {
             data-aos="flip-left"
             data-aos-delay="50"
             data-aos-duration="1500"
+            data-aos-once="true"
           >
             <Fade delay={500} duration={2500}>
               <div className="h-[27.2rem] overflow-hidden">
@@ -89,7 +96,6 @@ const ProjectOne = () => {
                   classes. Additionally, an admin panel is available for
                   effective user and class management. Experience a streamlined
                   platform that connects athletes with their desired classes.
-                  Start optimizing your athletic journey today!
                 </p>
                 <p className="mt-6 text-neutral">
                   Credentials: <br /> Admin - khalu@gmail.com | Seco&1 <br />{" "}
@@ -106,6 +112,7 @@ const ProjectOne = () => {
             data-aos="flip-right"
             data-aos-delay="100"
             data-aos-duration="2000"
+            data-aos-once="true"
           >
             <div className="h-[27.2rem] overflow-hidden">
               <Fade delay={1000} duration={2500}>
