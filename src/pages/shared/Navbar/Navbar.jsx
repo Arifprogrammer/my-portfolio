@@ -6,6 +6,8 @@ import { RiContactsBook2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import PdfFile from "../../../assets/Arif_React_Resume.pdf";
 import ToggleTheme from "../../../components/ToggleTheme";
+import MenuSwap from "../../../components/MenuSwap";
+import { useState } from "react";
 
 const Navbar = () => {
   const downloadPdf = () => {
@@ -15,9 +17,18 @@ const Navbar = () => {
     link.click();
   };
 
+  const [show, setShow] = useState(false);
+
   return (
     <>
-      <nav className="fixed left-2 top-4 lg:left-16 lg:top-20 space-y-5 uppercase z-10">
+      <div className="lg:hidden">
+        <MenuSwap show={show} setShow={setShow} />
+      </div>
+      <nav
+        className={` fixed left-2 top-16 lg:left-16 lg:top-20 space-y-5 uppercase z-10 bg-black bg-opacity-75 lg:bg-transparent py-3 pl-3 pr-10 rounded-2xl lg:rounded-none lg:p-0 ${
+          show ? "block" : "hidden lg:block"
+        }`}
+      >
         <Link to="/home" className="flex gap-x-4 items-center">
           <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
             <AiFillHome />
@@ -34,7 +45,7 @@ const Navbar = () => {
             About
           </p>
         </Link>
-        <Link className="flex gap-x-4 items-center" to="projects">
+        <Link className="flex gap-x-4 items-center" to="/projects">
           <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
             <AiFillProject />
           </button>
@@ -42,7 +53,7 @@ const Navbar = () => {
             Projects
           </p>
         </Link>
-        <Link className="flex gap-x-4 items-center">
+        <Link className="flex gap-x-4 items-center" to="/contact">
           <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
             <RiContactsBook2Fill />
           </button>

@@ -1,5 +1,4 @@
 import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
-
 const Banner = () => {
   return (
     <section

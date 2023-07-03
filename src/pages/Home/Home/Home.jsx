@@ -3,6 +3,8 @@ import About from "../About/About";
 import Banner from "../Banner/Banner";
 import ProjectsContainer from "../Projects/ProjectsContainer";
 import { useEffect } from "react";
+import Contact from "../Contact/Contact";
+import ErrorPage from "../../Errorpage/Errorpage";
 
 const Home = () => {
   const { sectionId } = useParams();
@@ -11,6 +13,8 @@ const Home = () => {
       const sectionElement = document.getElementById(sectionId);
       if (sectionElement) {
         sectionElement.scrollIntoView({ behavior: "smooth" });
+      } else {
+        return <ErrorPage />;
       }
     }
   }, [sectionId]);
@@ -25,6 +29,9 @@ const Home = () => {
       {/* ----------------- Projects start ----------------------- */}
       <ProjectsContainer />
       {/* ----------------- Projects end ----------------------- */}
+      {/* ----------------- Contact start ----------------------- */}
+      <Contact />
+      {/* ----------------- Contact end ----------------------- */}
     </>
   );
 };

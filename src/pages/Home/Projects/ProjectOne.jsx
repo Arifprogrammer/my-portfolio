@@ -36,7 +36,7 @@ const ProjectOne = () => {
               className="project-img"
             />
           </div>
-          <div className="grow flex flex-wrap items-center gap-x-2 justify-around bg-black text-primary font-semibold">
+          <div className="grow flex flex-wrap items-center gap-x-2 justify-around bg-black text-primary font-semibold px-2 lg:px-0">
             <a
               href="https://athletex-com.web.app"
               target="_blank"
@@ -70,7 +70,7 @@ const ProjectOne = () => {
             </button>
             {/* ------------lg:hidden------------------ */}
             <button className="hover:text-white transition duration-300 lg:hidden">
-              <Link>Details</Link>
+              <Link to="/projects/1">Details</Link>
             </button>
           </div>
         </div>

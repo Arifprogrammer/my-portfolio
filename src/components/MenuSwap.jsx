@@ -1,9 +1,12 @@
-const MenuSwap = () => {
+const MenuSwap = ({ show, setShow }) => {
+  const test = () => {
+    setShow(!show);
+  };
   return (
     <>
-      <label className="btn swap swap-rotate transform hover:scale-x-125 hover:transition duration-700">
+      <label className="btn swap swap-rotate p-2 bg-black bg-opacity-30 text-primary fixed left-0 top-4 z-20 ml-2">
         {/* this hidden checkbox controls the state */}
-        <input type="checkbox" />
+        <input type="checkbox" onClick={test} />
 
         {/* hamburger icon */}
         <svg
