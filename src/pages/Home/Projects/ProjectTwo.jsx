@@ -23,7 +23,7 @@ const ProjectTwo = () => {
           </div>
         )}
         <div
-          className="border-2 border-primary rounded-lg h-[30rem] overflow-hidden flex flex-col projects order-3"
+          className="border-2 border-primary rounded-lg h-[30rem] overflow-hidden flex flex-col projects-middle order-3"
           data-aos="fade-left"
           data-aos-delay="100"
           data-aos-duration="1200"

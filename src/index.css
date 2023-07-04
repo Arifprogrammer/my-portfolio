@@ -92,7 +92,10 @@
   object-position: bottom;
 }
 .projects {
-  box-shadow: 16px 14px 20px #0000008c;
+  box-shadow: 8px 12px 20px #6beee78c;
+}
+.projects-middle {
+  box-shadow: -8px 12px 20px #6beee78c;
 }
 /* -------------------------------------------------------------
               Projects Section End

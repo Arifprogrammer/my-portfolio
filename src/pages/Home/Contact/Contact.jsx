@@ -37,7 +37,7 @@ const Contact = () => {
         </h1>
 
         <form
-          className="card-body border-2 border-primary lg:w-2/3 mx-auto rounded-lg pt-10 pb-20"
+          className="card-body border-2 border-primary lg:w-2/3 mx-auto rounded-lg pt-10 pb-20 shadow-lg shadow-primary"
           onSubmit={handleSubmit}
           ref={formRef}
         >
