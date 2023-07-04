@@ -15,7 +15,7 @@ const SpecificProject = () => {
   }, []);
   return (
     <>
-      <section className="min-h-screen flex justify-center items-center pt-20 pb-8 lg:pb-0 px-4 lg:px-0">
+      <section className="min-h-screen flex justify-center items-center pt-20 pb-8 lg:pb-0 px-4 md:px-8 lg:px-0">
         {project && (
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-y-6 lg:gap-y-0 lg:gap-x-8">
             <div>

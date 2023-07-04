@@ -8,7 +8,7 @@ const ErrorPage = () => {
   console.error(error);
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center gap-12 lg:gap-16 px-4 lg:px-0">
+    <section className="min-h-screen flex flex-col justify-center items-center gap-12 lg:gap-16 px-4 md:px-8 lg:px-0">
       <div id="error-page">
         <img src={errorPic} alt="" className="w-full" />
       </div>

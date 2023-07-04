@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <>
       <section
-        className="my-16 lg:mt-32 min-h-[80vh] px-4 lg:px-0"
+        className="my-16 lg:mt-32 min-h-[80vh] px-4 md:px-8 lg:px-0"
         id="contact"
       >
         <h1 className="text-3xl text-center font-bold text-primary uppercase mb-20">

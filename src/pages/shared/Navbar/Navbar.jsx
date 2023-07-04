@@ -10,15 +10,44 @@ import MenuSwap from "../../../components/MenuSwap";
 import { useState } from "react";
 import logo from "../../../assets/logo-removebg.png";
 
+const menus = [
+  {
+    id: 1,
+    link: "/home",
+    icon: <AiFillHome />,
+    name: "Home",
+  },
+  {
+    id: 2,
+    link: "/about",
+    icon: <TiInfoLarge />,
+    name: "About",
+  },
+  {
+    id: 3,
+    link: "/projects",
+    icon: <AiFillProject />,
+    name: "Projects",
+  },
+  {
+    id: 4,
+    link: "/contact",
+    icon: <RiContactsBook2Fill />,
+    name: "Contact",
+  },
+];
+
 const Navbar = () => {
+  //* hooks
+  const [show, setShow] = useState(false);
+
+  //* functions
   const downloadPdf = () => {
     const link = document.createElement("a");
     link.href = PdfFile;
     link.download = "Arif_React_Resume.pdf";
     link.click();
   };
-
-  const [show, setShow] = useState(false);
 
   return (
     <>
@@ -36,38 +65,20 @@ const Navbar = () => {
         <div className="w-32 h-32 hidden lg:block">
           <img src={logo} alt="" className="w-full" />
         </div>
-        <Link to="/home" className="flex gap-x-4 items-center">
-          <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
-            <AiFillHome />
-          </button>
-          <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:hover:text-white lg:hover:transition lg:duration-300">
-            Home
-          </p>
-        </Link>
-        <Link to="/about" className="flex gap-x-4 items-center">
-          <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
-            <TiInfoLarge />
-          </button>
-          <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:hover:text-white lg:hover:transition lg:duration-300">
-            About
-          </p>
-        </Link>
-        <Link className="flex gap-x-4 items-center" to="/projects">
-          <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
-            <AiFillProject />
-          </button>
-          <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:hover:text-white lg:hover:transition lg:duration-300">
-            Projects
-          </p>
-        </Link>
-        <Link className="flex gap-x-4 items-center" to="/contact">
-          <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
-            <RiContactsBook2Fill />
-          </button>
-          <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:hover:text-white lg:hover:transition lg:duration-300">
-            Contact
-          </p>
-        </Link>
+        {menus.map((menu) => (
+          <Link
+            key={menu.id}
+            to={menu.link}
+            className="flex gap-x-4 items-center"
+          >
+            <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
+              {menu.icon}
+            </button>
+            <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:hover:text-white lg:hover:transition lg:duration-300">
+              {menu.name}
+            </p>
+          </Link>
+        ))}
         <div className="lg:pt-20">
           <Link
             className="flex gap-x-4 items-center"

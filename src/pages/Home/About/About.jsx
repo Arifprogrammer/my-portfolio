@@ -37,22 +37,21 @@ const About = () => {
   return (
     <>
       <section
-        className="my-16 lg:my-20 min-h-[80vh] px-4 lg:px-0 pt-10"
+        className="my-16 lg:my-20 min-h-[80vh] px-4 md:px-8 lg:px-0 pt-10"
         id="about"
       >
         <h1 className="text-3xl text-center font-bold text-primary uppercase mb-20">
           About Me
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10">
-          <div className="flex relative">
-            <div className="min-h-[20rem] md:min-h-[40rem] lg:min-h-[30rem] w-4/5 mx-auto lg:w-2/3 bg-neutral rounded-lg"></div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-2">
+          <div className="w-4/5 mx-auto lg:w-2/3 bg-neutral rounded-lg bg-opacity-20">
             <img
               src={about_pic}
               alt=""
-              className="h-[20rem] md:min-h-[40rem] lg:min-h-[30rem] w-4/5 mx-auto lg:w-2/3 object-cover object-top rounded-lg absolute left-6 top-6 lg:left-32 lg:top-10"
+              className="h-full w-full mx-auto object-cover object-top rounded-lg translate-x-7 translate-y-7"
             />
           </div>
-          <div className="text-neutral text-lg font-semibold space-y-3 lg:flex lg:flex-col lg:justify-end text-center lg:text-left mt-16 lg:mt-0">
+          <div className="text-neutral text-lg font-semibold space-y-3 lg:flex lg:flex-col lg:justify-center text-center lg:text-left mt-16 lg:mt-0">
             {about.map((text) => (
               <p key={text.id}>{text.text}</p>
             ))}
