@@ -31,6 +31,7 @@ const SpecificProject = () => {
 
               {project?.credentials && (
                 <div className="pt-4 text-neutral font-semibold">
+                  <p className="text-xl font-semibold pb-2">Credentials:</p>
                   {project.credentials?.map((c, i) => (
                     <p key={i}>{c}</p>
                   ))}
@@ -48,7 +49,7 @@ const SpecificProject = () => {
                   href={project.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-white transition duration-300"
+                  className="hover:text-black transition duration-300 px-4 border-2 border-primary rounded-2xl hover:bg-primary"
                 >
                   Live
                 </a>
@@ -56,7 +57,7 @@ const SpecificProject = () => {
                   href={project.client}
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-white transition duration-300"
+                  className="hover:text-black transition duration-300 px-4 border-2 border-primary rounded-2xl hover:bg-primary"
                 >
                   Client Code
                 </a>
@@ -64,7 +65,7 @@ const SpecificProject = () => {
                   href={project.server}
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-white transition duration-300"
+                  className="hover:text-black transition duration-300 px-4 border-2 border-primary rounded-2xl hover:bg-primary"
                 >
                   Server Code
                 </a>

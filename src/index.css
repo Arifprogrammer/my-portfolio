@@ -28,8 +28,8 @@
 .banner-img::before {
   content: "";
   background-image: conic-gradient(#66fcf1 20deg, transparent 120deg);
-  width: 150%;
-  height: 150%;
+  width: 180%;
+  height: 180%;
   position: absolute;
   animation: rotate 3s linear infinite;
 }
