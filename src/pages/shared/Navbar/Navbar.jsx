@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <>
       <div className="w-20 h-20 lg:hidden mx-auto mt-2">
-        <img src={logo} alt="" className="w-full" />
+        <img src={logo} alt="" className="w-full animate-pulse" />
       </div>
       <div className="lg:hidden">
         <MenuSwap show={show} setShow={setShow} />
@@ -63,7 +63,7 @@ const Navbar = () => {
         }`}
       >
         <div className="w-32 h-32 hidden lg:block">
-          <img src={logo} alt="" className="w-full" />
+          <img src={logo} alt="" className="w-full animate-pulse" />
         </div>
         {menus.map((menu) => (
           <Link
@@ -86,7 +86,7 @@ const Navbar = () => {
             onClick={downloadPdf}
           >
             <button className="bg-primary p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
-              <MdDownloadForOffline />
+              <MdDownloadForOffline className="animate-bounce" />
             </button>
             <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:hover:text-white lg:hover:transition lg:duration-300">
               Resume
