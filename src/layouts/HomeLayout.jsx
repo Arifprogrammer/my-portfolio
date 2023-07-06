@@ -23,9 +23,7 @@ const HomeLayout = () => {
   return (
     <>
       <Navbar />
-      <div className="lg:w-3/5 lg:mx-auto">
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </>
   );

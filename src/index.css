@@ -12,6 +12,14 @@
   background: linear-gradient(transparent, #45a29e);
   border-radius: 6px;
 }
+
+/* -------------------------------------------------------------
+              My Container
+------------------------------------------------------------- */
+.my-container {
+  @apply lg:w-3/5 lg:mx-auto;
+}
+
 /* -------------------------------------------------------------
               Banner Section Start
 ------------------------------------------------------------- */
@@ -32,6 +40,33 @@
   height: 180%;
   position: absolute;
   animation: rotate 3s linear infinite;
+}
+
+@media screen and (min-width: 992px) {
+  #home {
+    --s: 20px; /* size of the lines */
+    --g: 15px; /* gap between lines */
+
+    --c1: #1f2833;
+    --c2: #1f2833;
+
+    background: conic-gradient(
+          at var(--s) calc(100% - var(--s)),
+          #0000 270deg,
+          var(--c1) 0
+        )
+        calc(var(--s) + var(--g)) 0,
+      linear-gradient(var(--c2) var(--s), #0000 0) 0 var(--g),
+      conic-gradient(
+        at var(--s) calc(100% - var(--s)),
+        #0000 90deg,
+        var(--c2) 0 180deg,
+        var(--c1) 0
+      ),
+      #31405236;
+    background-size: calc(2 * (var(--s) + var(--g)))
+      calc(2 * (var(--s) + var(--g)));
+  }
 }
 
 @keyframes rotate {

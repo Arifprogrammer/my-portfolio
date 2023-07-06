@@ -1,6 +1,7 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { useRef } from "react";
 import Swal from "sweetalert2";
+import { RiMailSendLine } from "react-icons/ri";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -29,7 +30,7 @@ const Contact = () => {
   return (
     <>
       <section
-        className="my-16 lg:mt-32 min-h-[80vh] px-4 md:px-8 lg:px-0"
+        className="my-16 lg:mt-32 min-h-[80vh] px-4 md:px-8 lg:px-0 my-container"
         id="contact"
       >
         <h1 className="text-3xl text-center font-bold text-primary uppercase mb-20">
@@ -76,7 +77,7 @@ const Contact = () => {
               <span className="label-text text-white">Message</span>
             </label>
             <textarea
-              className="textarea textarea-primary h-32 text-gray-700 font-semibold"
+              className="textarea h-32 text-gray-700 font-semibold"
               placeholder="Message"
               required
               name="message"
@@ -89,11 +90,11 @@ const Contact = () => {
           </div>
           <div className="form-control mt-6">
             <button
-              className="btn btn-primary"
+              className="btn btn-primary font-bold"
               type="submit"
               disabled={state.submitting}
             >
-              Send
+              Send <RiMailSendLine className="text-xl" />
             </button>
           </div>
         </form>

@@ -37,7 +37,7 @@ const About = () => {
   return (
     <>
       <section
-        className="my-16 lg:my-20 min-h-[80vh] px-4 md:px-8 lg:px-0 pt-10"
+        className="my-16 lg:my-20 min-h-[80vh] px-4 md:px-8 lg:px-0 pt-10 my-container"
         id="about"
       >
         <h1 className="text-3xl text-center font-bold text-primary uppercase mb-20">
