@@ -69,23 +69,23 @@ const Navbar = () => {
           <Link
             key={menu.id}
             to={menu.link}
-            className="flex gap-x-4 items-center"
+            className="flex gap-x-4 items-center group"
           >
-            <button className="bg-primary p-1 text-xl lg:p-2 rounded-full text-accent lg:text-2xl lg:hover:bg-white lg:hover:transition lg:duration-300">
+            <button className="bg-primary p-1 text-xl lg:p-2 rounded-full text-accent lg:text-2xl lg:group-hover:bg-white lg:group-hover:transition lg:group-duration-300">
               {menu.icon}
             </button>
-            <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:hover:text-white lg:hover:transition lg:duration-300">
+            <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:group-hover:text-white lg:group-hover:transition lg:group-duration-300">
               {menu.name}
             </p>
           </Link>
         ))}
-        <div className="lg:pt-20">
+        <div className="lg:pt-20 group">
           <Link
             className="flex gap-x-4 items-center"
             to="#"
             onClick={downloadPdf}
           >
-            <button className="bg-primary p-1 text-xl lg:p-1 rounded-full text-accent lg:text-3xl lg:hover:bg-white lg:hover:transition lg:duration-300">
+            <button className="bg-primary p-1 text-xl lg:p-1 rounded-full text-accent lg:text-3xl lg:group-hover:bg-white lg:group-hover:transition lg:group-duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -132,7 +132,7 @@ const Navbar = () => {
               </svg>
               {/* <MdDownloadForOffline className="animate-bounce" /> */}
             </button>
-            <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:hover:text-white lg:hover:transition lg:duration-300">
+            <p className="text-primary lg:text-lg font-semibold cursor-pointer lg:group-hover:text-white lg:group-hover:transition lg:group-duration-300">
               Resume
             </p>
           </Link>

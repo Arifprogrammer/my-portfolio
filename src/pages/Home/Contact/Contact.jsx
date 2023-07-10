@@ -90,7 +90,7 @@ const Contact = () => {
           </div>
           <div className="form-control mt-6">
             <button
-              className="btn btn-primary font-bold"
+              className="btn btn-primary font-bold hover:bg-white hover:border-0 hover:transition hover:duration-300"
               type="submit"
               disabled={state.submitting}
             >

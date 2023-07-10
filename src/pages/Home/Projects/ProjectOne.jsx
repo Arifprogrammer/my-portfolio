@@ -97,7 +97,7 @@ const ProjectOne = () => {
                   effective user and class management. Experience a streamlined
                   platform that connects athletes with their desired classes.
                 </p>
-                <p className="mt-6 text-neutral">
+                <p className="mt-6 text-[#cadaeb]">
                   Credentials: <br /> Admin - khalu@gmail.com | Seco&1 <br />{" "}
                   Instructor - john@example.com | Seco&1 <br /> Student -
                   khali@gmail.com | Seco&1
@@ -118,7 +118,7 @@ const ProjectOne = () => {
               <Fade delay={1000} duration={2500}>
                 <p className="font-bold">Key Features:</p>
                 <p>
-                  <span className="font-bold text-neutral">
+                  <span className="font-bold text-[#cadaeb]">
                     ✓ Student Dashboard:
                   </span>{" "}
                   Students have access to a personalized dashboard where they
@@ -128,7 +128,7 @@ const ProjectOne = () => {
                   athletic journey.
                 </p>
                 <p>
-                  <span className="font-bold text-neutral">
+                  <span className="font-bold text-[#cadaeb]">
                     ✓ Instructor Management:
                   </span>{" "}
                   Instructors have dedicated tools to add and manage their
@@ -139,7 +139,7 @@ const ProjectOne = () => {
                   offerings effectively.
                 </p>
                 <p>
-                  <span className="font-bold text-neutral">
+                  <span className="font-bold text-[#cadaeb]">
                     ✓ Admin Control Panel:
                   </span>{" "}
                   The admin role has access to a control panel that grants them

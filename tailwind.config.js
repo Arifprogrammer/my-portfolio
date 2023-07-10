@@ -11,7 +11,7 @@ export default {
           primary: "#66FCF1", //cyan light
           secondary: "#45A29E", //cyan dark
           accent: "#1F2833", // dark gray
-          neutral: "#a2bcd6", // light gray
+          neutral: "#cadaeb", // light gray
           "base-100": "#ffffff",
 
           "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes

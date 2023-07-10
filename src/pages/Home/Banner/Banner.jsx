@@ -38,21 +38,21 @@ const Banner = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <BsFacebook />
+                <BsFacebook className="hover:text-white hover:transition hover:duration-300" />
               </a>
               <a
                 href="https://www.linkedin.com/in/arif-web/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <BsLinkedin className="rounded-full" />
+                <BsLinkedin className="rounded-full hover:text-white hover:transition hover:duration-300" />
               </a>
               <a
                 href="https://github.com/Arifprogrammer"
                 target="_blank"
                 rel="noreferrer"
               >
-                <BsGithub />
+                <BsGithub className="hover:text-white hover:transition hover:duration-300" />
               </a>
             </div>
           </div>

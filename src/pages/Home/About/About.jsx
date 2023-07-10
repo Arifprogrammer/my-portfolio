@@ -44,14 +44,14 @@ const About = () => {
           About Me
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-2">
-          <div className="w-4/5 mx-auto lg:w-2/3 bg-neutral rounded-lg bg-opacity-20">
+          <div className="w-4/5 mx-auto lg:w-2/3 bg-[#cadaeb] rounded-lg bg-opacity-20">
             <img
               src={about_pic}
               alt=""
               className="h-full w-full mx-auto object-cover object-top rounded-lg translate-x-7 translate-y-7"
             />
           </div>
-          <div className="text-neutral text-lg font-semibold space-y-3 lg:flex lg:flex-col lg:justify-center text-center lg:text-left mt-16 lg:mt-0">
+          <div className="text-[#cadaeb] text-lg font-semibold space-y-3 lg:flex lg:flex-col lg:justify-center text-center lg:text-left mt-16 lg:mt-0">
             {about.map((text) => (
               <p key={text.id}>{text.text}</p>
             ))}
