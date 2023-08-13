@@ -2,6 +2,17 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useRef } from "react";
 import Swal from "sweetalert2";
 import { RiMailSendLine } from "react-icons/ri";
+import { BsWhatsapp } from "react-icons/bs";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import SocialLinks from "../../../components/SocialLinks";
+
+const contacts = [
+  { icon: SiGmail, link: "mailto:arifmgtcu@gmail.com" },
+  { icon: BsWhatsapp, link: "https://wa.me/qr/PNPBLKM5G5BCJ1" },
+  { icon: FaLinkedin, link: "https://www.linkedin.com/in/arif-web/" },
+  { icon: FaFacebookSquare, link: "https://www.facebook.com/silentkiller3333" },
+];
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -21,7 +32,7 @@ const Contact = () => {
 
     Toast.fire({
       icon: "success",
-      title: "Message Send successfully",
+      title: "Email Send successfully",
     });
     if (formRef.current) {
       formRef.current.reset();
@@ -96,6 +107,17 @@ const Contact = () => {
             >
               Send <RiMailSendLine className="text-xl" />
             </button>
+          </div>
+          <div className="divider before:bg-white after:bg-white">OR</div>
+          <div className="flex gap-x-6 text-4xl text-primary mx-auto">
+            {contacts.map((contact, i) => (
+              <SocialLinks
+                key={i}
+                contactLink={contact.link}
+                icon={contact.icon}
+                text={"text-2xl lg:text-3xl"}
+              />
+            ))}
           </div>
         </form>
       </section>

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import About from "../About/About";
 import Banner from "../Banner/Banner";
-import ProjectsContainer from "../Projects/ProjectsContainer";
+import ProjectsContainer from "../ProjectsContainer/ProjectsContainer";
 import { useEffect } from "react";
 import Contact from "../Contact/Contact";
 import ErrorPage from "../../Errorpage/Errorpage";

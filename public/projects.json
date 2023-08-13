@@ -1,6 +1,35 @@
 [
   {
     "id": 1,
+    "image": "https://i.ibb.co/0GRBW9F/healthy-Recipe-min.jpg",
+    "name": "Healthy Recipe.com (A Food Order Platform)",
+    "about": "This food recipe website is a platform where users can find and share their favorite recipes. It provides a wide range of recipes, from appetizers to desserts, and everything in between. The website is user-friendly and easy to navigate, with a clean and modern design. Each recipe includes a list of ingredients, step-by-step instructions, and photos to help users visualize the cooking process. In addition to browsing recipes, users can create their own profile and save their favorite recipes for easy access later on. Overall, this food recipe website provides a comprehensive platform for recipe sharing and discovery, catering to a wide range of tastes and dietary needs. It is a great resource for home cooks and food enthusiasts alike.",
+    "features": [
+      "✓ Successfully integrated Firebase authentication, enabling seamless login options for users via Google, GitHub, or Email/Password, with no sensitive data stored in the database.",
+      "✓ Implemented a robust private route system, granting access to authorized users while restricting access to the private route upon logout.",
+      "✓ Introduced user-friendly features, such as the ability to mark favorite recipes and conveniently print the blog page for enhanced user experience."
+    ],
+    "live": "https://healthy-recipe-a4d57.web.app",
+    "client": "https://github.com/Arifprogrammer/healthy-recipe.com",
+    "server": "https://github.com/Arifprogrammer/healthy-recipe.com-server"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/0Y3VgvK/kiddu-min.jpg",
+    "name": "Kiddu.com (A Toy Marketplace for Kids)",
+    "about": "The project's aim is to provide a platform where kids and parents alike can discover and explore a wide range of toys, creating a haven for play and imagination. We understand the importance of toys in a child's development, as they foster creativity, enhance cognitive skills, and encourage social interaction. The project's mission is to curate a diverse collection of toys from trusted brands, ensuring that every product meets high-quality standards for safety and durability. Whether it's educational toys that spark curiosity, interactive games that promote teamwork, or cuddly companions that offer comfort, our goal is to offer a comprehensive selection that caters to the unique interests and needs of children.",
+    "features": [
+      "✓ Used two user roles buyer and seller. Buyer and Seller are controlled with a private route.",
+      "✓ Seller can add their products, see all products, see their own products, update their products and delete their products. On the other hand buyers can just view toy details from anywhere.",
+      "✓ The website is responsive for mobile and larger devices like laptops and desktops."
+    ],
+    "live": "https://kiddu-com.web.app",
+    "client": "https://github.com/Arifprogrammer/kiddu.com-client",
+    "server": "https://github.com/Arifprogrammer/kiddu.com-server-public"
+  },
+
+  {
+    "id": 3,
     "image": "https://i.ibb.co/MCFQGfs/athlete-X-min.jpg",
     "name": "AthelteX.com (A Course Enrollment Platform)",
     "about": "This project is designed to simplify the process of booking athlete classes for students during their summer vacations. It also allows instructors to effortlessly add and manage their classes. The system includes a secure payment integration, enabling students to conveniently pay for their chosen classes. Additionally, an admin panel is available for effective user and class management. Experience a streamlined platform that connects athletes with their desired classes.",
@@ -22,31 +51,17 @@
     "server": "https://github.com/Arifprogrammer/athelteX-server"
   },
   {
-    "id": 2,
-    "image": "https://i.ibb.co/0Y3VgvK/kiddu-min.jpg",
-    "name": "Kiddu.com (A Toy Marketplace for Kids)",
-    "about": "The project's aim is to provide a platform where kids and parents alike can discover and explore a wide range of toys, creating a haven for play and imagination. We understand the importance of toys in a child's development, as they foster creativity, enhance cognitive skills, and encourage social interaction. The project's mission is to curate a diverse collection of toys from trusted brands, ensuring that every product meets high-quality standards for safety and durability. Whether it's educational toys that spark curiosity, interactive games that promote teamwork, or cuddly companions that offer comfort, our goal is to offer a comprehensive selection that caters to the unique interests and needs of children.",
+    "id": 4,
+    "image": "https://i.ibb.co/FYfR9y2/House-Hunter-com.webp",
+    "name": "House Hunter (Seamless House Booking System)",
+    "about": "This innovative platform presents a self-contained authentication system that ensures security while connecting house owners to potential tenants. Homeowners enjoy easy listing management, showcasing properties with customized details. Renters can explore and filter a variety of listings by location, room features, and pricing, while managing up to two active house requests. Welcome to the future of efficient, independent housing solutions with House Hunter.",
     "features": [
-      "✓ Used two user roles buyer and seller. Buyer and Seller are controlled with a private route.",
-      "✓ Seller can add their products, see all products, see their own products, update their products and delete their products. On the other hand buyers can just view toy details from anywhere.",
-      "✓ The website is responsive for mobile and larger devices like laptops and desktops."
+      "✓ Implemented a secure authentication system from scratch, ensuring the privacy and security of user data without relying on third-party services.",
+      "✓ House owners enjoy the convenience of effortlessly managing and adding their properties. Renters can easily book their dream houses, with a maximum limit of 2 bookings per renter.",
+      "✓ The platform also provides advanced search and filtering options, enabling users to find houses based on specific criteria such as location, room size, availability dates, price range, and the number of rooms."
     ],
-    "live": "https://kiddu-com.web.app",
-    "client": "https://github.com/Arifprogrammer/kiddu.com-client",
-    "server": "https://github.com/Arifprogrammer/kiddu.com-server-public"
-  },
-  {
-    "id": 3,
-    "image": "https://i.ibb.co/0GRBW9F/healthy-Recipe-min.jpg",
-    "name": "Healthy Recipe.com (A Food Order Platform)",
-    "about": "This food recipe website is a platform where users can find and share their favorite recipes. It provides a wide range of recipes, from appetizers to desserts, and everything in between. The website is user-friendly and easy to navigate, with a clean and modern design. Each recipe includes a list of ingredients, step-by-step instructions, and photos to help users visualize the cooking process. In addition to browsing recipes, users can create their own profile and save their favorite recipes for easy access later on. Overall, this food recipe website provides a comprehensive platform for recipe sharing and discovery, catering to a wide range of tastes and dietary needs. It is a great resource for home cooks and food enthusiasts alike.",
-    "features": [
-      "✓ Successfully integrated Firebase authentication, enabling seamless login options for users via Google, GitHub, or Email/Password, with no sensitive data stored in the database.",
-      "✓ Implemented a robust private route system, granting access to authorized users while restricting access to the private route upon logout.",
-      "✓ Introduced user-friendly features, such as the ability to mark favorite recipes and conveniently print the blog page for enhanced user experience."
-    ],
-    "live": "https://healthy-recipe-a4d57.web.app",
-    "client": "https://github.com/Arifprogrammer/healthy-recipe.com",
-    "server": "https://github.com/Arifprogrammer/healthy-recipe.com-server"
+    "live": "https://house-hunter-com.web.app/",
+    "client": "https://github.com/Arifprogrammer/house-hunter-client",
+    "server": "https://github.com/Arifprogrammer/house-hunter-server"
   }
 ]

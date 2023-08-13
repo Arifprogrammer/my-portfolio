@@ -4,7 +4,6 @@ import { AiFillProject } from "react-icons/ai";
 // import { MdDownloadForOffline } from "react-icons/md";
 import { RiContactsBook2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import PdfFile from "../../../assets/Arif_React_Resume.pdf";
 import ToggleTheme from "../../../components/ToggleTheme";
 import MenuSwap from "../../../components/MenuSwap";
 import { useState } from "react";
@@ -44,14 +43,18 @@ const Navbar = () => {
   //* functions
   const downloadPdf = () => {
     const link = document.createElement("a");
-    link.href = PdfFile;
-    link.download = "Arif_React_Resume.pdf";
+    link.href =
+      "https://drive.google.com/file/d/1gHlQsPZgbwOlbcJ-HXBAc-Hs2O91hoVZ/view?usp=sharing";
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.download = "Md. Ariful Haque_MERN_Stack_Developer_Resume.pdf";
     link.click();
+    link.remove();
   };
 
   return (
     <>
-      <div className="w-20 h-20 lg:hidden mx-auto mt-2">
+      <div className="w-20 h-20 lg:hidden mx-auto mt-2 absolute left-1/2 -translate-x-1/2">
         <img src={logo} alt="" className="w-full animate-pulse" />
       </div>
       <div className="lg:hidden">
